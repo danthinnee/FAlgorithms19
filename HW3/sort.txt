@@ -1,15 +1,16 @@
-Array Name	Sorting Algorithm	Number of Moves	Number of Comparisonsrray Name      Sorting Algorithm       Number of Moves Number of Comparisons
-BST             Selection Sort          0               500499
-AVG             Selection Sort          2973            500499
-WST             Selection Sort          1500            500499
-BST             Bubble Sort             0               999
-AVG             Bubble Sort             773106          498639
-WST             Bubble Sort             1498500         499500
-BST             Insertion Sort          999             999
-AVG             Insertion Sort          259693          258701
-WST             Insertion Sort          501498          500499
-BST             Merge Sort              19974           17168
-AVG             Merge Sort              19974           28175
-WST             Merge Sort              19974           19787
-BST             Quick Sort              3017            13770
-AVG             Quick Sort              7800            10289
+Array Name	Sorting Algorithm	Number of Moves	Number of Comparisons
+BST		Selection Sort		0		500499
+AVG		Selection Sort		2982		500499
+WST		Selection Sort		1500		500499
+BST		Bubble Sort		0		999
+AVG		Bubble Sort		770535		497789
+WST		Bubble Sort		1498500		499500
+BST		Insertion Sort		999		999
+AVG		Insertion Sort		258838		257844
+WST		Insertion Sort		501498		500499
+BST		Merge Sort		19974		17168
+AVG		Merge Sort		19974		28130
+WST		Merge Sort		19974		19787
+BST		Quick Sort		3017		13770
+AVG		Quick Sort		7842		11047
+WST		Quick Sort		4802		13377
