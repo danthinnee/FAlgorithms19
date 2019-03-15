@@ -1,25 +1,25 @@
-Processing an arrival event at time <-- 1
-Processing an arrival event at time <-- 2
-Processing an arrival event at time <-- 4
-Processing a departure event at time --> 6
-Processing a departure event at time --> 7
-Processing a departure event at time --> 9
-Processing an arrival event at time <-- 20
-Processing an arrival event at time <-- 22
-Processing an arrival event at time <-- 24
-Processing a departure event at time --> 25
-Processing an arrival event at time <-- 26
-Processing a departure event at time --> 27
-Processing an arrival event at time <-- 28
-Processing a departure event at time --> 29
-Processing an arrival event at time <-- 30
-Processing a departure event at time --> 31
-Processing a departure event at time --> 33
-Processing a departure event at time --> 35
-Processing an arrival event at time <-- 88
-Processing a departure event at time --> 91
-Final Statistics: 
+Processing an arrival event at time <‐‐ 1
+Processing an arrival event at time <‐‐ 2
+Processing an arrival event at time <‐‐ 4
+Processing a departure event at time ‐‐>6
+Processing a departure event at time ‐‐>11
+Processing a departure event at time ‐‐>16
+Processing an arrival event at time <‐‐ 20
+Processing an arrival event at time <‐‐ 22
+Processing an arrival event at time <‐‐ 24
+Processing a departure event at time ‐‐>25
+Processing an arrival event at time <‐‐ 26
+Processing an arrival event at time <‐‐ 28
+Processing an arrival event at time <‐‐ 30
+Processing a departure event at time ‐‐>30
+Processing a departure event at time ‐‐>35
+Processing a departure event at time ‐‐>40
+Processing a departure event at time ‐‐>45
+Processing a departure event at time ‐‐>50
+Processing an arrival event at time <‐‐ 88
+Processing a departure event at time ‐‐>91
+Final Statistics:
 Total number of customers processed: 10
-Average waiting time = 0
-Maximum waiting time = 0
-Maximum waiting queue length = 0
+Average waiting time = 5.6 
+Maximum waiting time = 15
+Maximum waiting queue length = 4
