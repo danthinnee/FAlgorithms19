@@ -7,9 +7,9 @@
 using namespace std;
 
 int main() {
-	BankTellerService myBank("input.txt", "output.txt");
-	myBank.readCustomersInfo();
-	myBank.serveCustomers();
-	myBank.getStatistics();
+	BankTellerService myBank("input.txt", "output.txt"); // create object
+	myBank.readCustomersInfo(); // read from text file
+	myBank.serveCustomers(); // carry out simulation
+	myBank.getStatistics(); // display statistics
 	return 0;
 }
