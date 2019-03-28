@@ -28,20 +28,20 @@ class BankTellerService{
 		int waitingQMax = 0; // the maximum length of the waiting queue
 
 	public:
-		BankTellerService(string infS, string otfS, int numT){
-			inf.open(infS.c_str());
+		BankTellerService(string infS, string otfS, int numT){ // constructor
+			inf.open(infS.c_str()); // open input file
 			if(inf.fail()){
 				cerr << "Error: Could not open input file\n";
 				exit(1);
 			}
-			otf.open(otfS.c_str());
+			otf.open(otfS.c_str()); // open output file
 			if(otf.fail()){
 				cerr << "Error: Could not open output file\n";
 				exit(1);
 			}
-			CustomersNum=0;
+			CustomersNum=0; // initialize Customers at 0
 			Customers = new BankCustomer[eventsQCapacity];
-			BusyTeller=numT;
+			BusyTeller=numT; // initialize number of tellers
 		}
 		~BankTellerService(){ inf.close(); otf.close(); }
 
@@ -53,7 +53,7 @@ class BankTellerService{
 			BankCustomer b;
 			int starttime=0;
 			int x,y;
-			while(inf >> x && inf >> y){
+			while(inf >> x && inf >> y){ // while there are still values to be streamed
 				arrtime=x;
 cout << arrtime << '\t';
 				b.ID=index; b.ArrivalTime=arrtime;
@@ -74,7 +74,7 @@ cout << transtime << endl;
 			// loop continues as long as there are events in teh EventsQ
 
 			while(!EventsQ.isEmpty()){
-				if(EventsQ.peekFront().EventType == 'A'){
+				if(EventsQ.peekFront().EventType == 'A'){ // if next event is an arrival
 					cout << "Processing an arrival event at time <-- " << EventsQ.peekFront().ADTime << endl; 
 					otf << "Processing an arrival event at time <-- " << EventsQ.peekFront().ADTime << endl;
 cout << BusyTeller << endl;
@@ -108,14 +108,14 @@ cout << BusyTeller << endl;
 					EventsQ.dequeue();
 			}
 		}}
-		void getStatistics(){
+		void getStatistics(){ // display statistics
 			cout << "Final Statistics:" << endl;
 			otf << "Final Statistics: " << endl;
 			cout << "Total number of customers processed: " << CustomersNum << endl;
 			otf << "Total number of customers processed: " << CustomersNum << endl;
 			float avgWaitTime = 0;
 			int maxWaitTime = 0;
-			for(int i=0; i<CustomersNum; i++){
+			for(int i=0; i<CustomersNum; i++){ // calculate average and max wait time
 				avgWaitTime = avgWaitTime + (Customers[i].ServiceStartTime - Customers[i].ArrivalTime);
 				if(Customers[i].ServiceStartTime-Customers[i].ArrivalTime > maxWaitTime){
 					maxWaitTime = Customers[i].ServiceStartTime - Customers[i].ArrivalTime;
