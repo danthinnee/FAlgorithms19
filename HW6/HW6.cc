@@ -1,3 +1,9 @@
+/* Elisa Danthinne
+ * Fundamentals of Algorithms - HW6
+ * HW6.cc
+ */
+
+
 #include <iostream>
 #include <fstream>
 #include <stdexcept>
